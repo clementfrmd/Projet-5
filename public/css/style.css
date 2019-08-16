@@ -1,0 +1,288 @@
+@font-face {
+    font-family: 'embryonicworldregular';
+    src: url('embryonic-world-webfont.woff2') format('woff2'),
+        url('embryonic-world-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'bitcoinregular';
+    src: url('bitcoin-webfont.woff2') format('woff2'),
+        url('bitcoin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+img {
+    margin-top: 10px;
+  }
+
+.tlogo {
+    font-family: embryonicworldregular, sans-serif;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px #107bfd;
+
+}
+
+
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    color: grey;
+}
+
+
+/*navbar*/
+
+.logobar {
+    font-family: bitcoinregular, sans-serif;
+    font-size: 35px;
+    font-weight: normal;
+}
+
+.navbar {
+    /*   background-color: #E6E6FA;*/
+    padding: 0rem;
+    margin-top: -3.5rem
+}
+
+.nav-link {
+
+    /*    color : #8E2DE2 !important;*/
+    color: white !important;
+    font-weight: bold;
+
+}
+
+navbar-toggler-icon {
+    color: white !important;
+    background-color: white;
+}
+
+
+.button:hover {
+    color: #c1e6ff !important;
+}
+
+nav {
+    margin-bottom: 0.5rem;
+    padding-bottom: 0rem;
+    padding-top: 0rem;
+
+}
+
+
+.coinbase {
+    box-shadow: 3px 3px 10px 0px #ABB0B0;
+    margin-bottom: 1rem;
+
+}
+
+.coinbase:hover {
+    box-shadow: 3px 3px 10px 0px #c1e6ff;
+
+}
+
+/*tableau*/
+
+
+#lcoin {
+    margin-top: -2rem;
+    box-shadow: 3px 3px 10px 0px #ABB0B0;
+
+}
+
+.thead {
+    background-image: linear-gradient(30deg, #7c71f5, #1b9eff);
+    color: white;
+
+}
+
+
+.thead th:hover {
+    color: #c1e6ff !important;
+}
+
+#NbrCoin {
+    font-size: 8px !important;
+
+}
+
+/*prix table*/
+.Ptablbtc {
+
+    font-weight: bold;
+}
+
+.fa-chart-line {
+    color: #1b9eff;
+}
+
+.fas .fa-chart-line a:hover {
+    color: #107bfd !important;
+}
+
+/*CARD INFO*/
+
+/* ombre card*/
+
+.card {
+    box-shadow: 5px 5px 30px 0px #ABB0B0;
+
+
+}
+
+.btn-primary {
+    background-image: linear-gradient(30deg, #7c71f5, #1b9eff);
+}
+
+/* titre logo*/
+.ilogo {
+    float: left;
+}
+
+#titre h2 {
+    margin-bottom: 2px;
+}
+
+/*prix*/
+#prix p,
+h1 {
+    margin-bottom: 0px;
+}
+
+#prix {
+    float: right;
+}
+
+div {
+    margin-bottom: 10px;
+}
+
+/*Etoile header*/
+canvas {
+    margin-top: -10rem;
+    margin-bottom: -4rem;
+    max-height: 15rem;
+}
+
+.jumbotron {
+    max-height: 15rem !important;
+    margin-bottom: 0rem;
+    background-image: linear-gradient(30deg, #7c71f5, #1b9eff);
+    /*    background-image:linear-gradient(30deg,#8E54E9,  #4776E6 );*/
+    border-radius: 0px;
+}
+
+a.cache {
+    text-decoration: none;
+    color: grey;
+}
+
+h1 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: whitesmoke
+}
+
+
+/*Footer*/
+footer p {
+    margin-bottom: 0px;
+}
+
+footer {
+    padding-top: 30px !important;
+    margin-top : 15px;
+
+
+}
+
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #1b9eff;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+
+}
+
+#loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #7c71f5;
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+}
+
+#loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #5380f9;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 845px) {}
+
+@media screen and (max-width: 705px) {}
