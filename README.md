@@ -1,7 +1,5 @@
 # OpenClassrooms_P5_ProjetPersonnel
 
-Créer un blog pour un écrivain.
-
 
 ## Installation
 
