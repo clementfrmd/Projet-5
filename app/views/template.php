@@ -9,16 +9,15 @@
     <meta name="description"
         content="Obtenez gratuitement et instantanément des taux, des outils et des analyses relatifs aux cryptomonnaies, s’appuyant sur les données les plus précises. D’autres services, tels que la conversion de devises sont également disponibles." />
     <!-- Open Graph data -->
-    <meta property="og:image" content="img/logo.gif" />
-    <meta property="og:title" content="The Rock" />
+    <meta property="og:image" content="../public/img/parrainage_fermaud_coinbase.png" />
+    <meta property="og:title" content="L'outil de conversion de cryptomonnaies" />
     <meta property="og:type" content="video.movie" />
-    <meta property="og:url" content="http://www.imdb.com/title/tt0117500/" />
+    <meta property="og:url" content="http://clement-fermaud.com" />
     <!-- Twitter Card data -->
     <meta name=”twitter:card” content=”summary” />
-    <meta name=”twitter:site” content=”@yoursite” />
-    <meta name=”twitter:title” content=”Your Title” />
-    <meta name=”twitter:description” content=”Your description.” />
-    <meta name=”twitter:image” content=”https://where-your-image-is-hosted/name.jpg” />
+    <meta name=”twitter:title” content="L'outil de conversion de cryptomonnaies" />
+    <meta name=”twitter:description” content="Obtenez gratuitement et instantanément des taux, des outils et des analyses relatifs aux cryptomonnaies, s’appuyant sur les données les plus précises. D’autres services, tels que la conversion de devises sont également disponibles." />
+    <meta name=”twitter:image” content="../public/img/parrainage_fermaud_coinbase.png" />
 
     <link rel="shortcut icon" type="icon" href="../public/img/cryptologo.ico" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
@@ -72,27 +71,56 @@
 
     <!-- FOOTER -->
 
-<footer class="page-footer font-small indigo">
+<!-- Footer -->
+<footer class="page-footer font-small teal pt-4">
+
+  <!-- Footer Text -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h3 class="text-uppercase font-weight-bold">Footer text 1</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita sapiente sint, nulla, nihil
+          repudiandae commodi voluptatibus corrupti animi sequi aliquid magnam debitis, maxime quam recusandae
+          harum esse fugiat. Itaque, culpa?</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mb-md-0 mb-3">
+
+        <!-- Content -->
+        <h4 class="text-uppercase font-weight-bold">Footer text 2</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio deserunt fuga perferendis modi earum
+          commodi aperiam temporibus quod nulla nesciunt aliquid debitis ullam omnis quos ipsam, aspernatur id
+          excepturi hic.</p>
+
+      </div>
       <!-- Grid column -->
 
     </div>
-    <!-- Grid row-->
+    <!-- Grid row -->
     <hr class="rgba-white-light" style="margin: 0 15%;">
 
-    <!-- Grid row-->
-    <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
-
-      <!-- Grid column -->
-      <div class="col-md-8 col-12 mt-5">
-        <p style="line-height: 1.7rem">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem
-          aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-          explicabo.
-          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
-      </div>
-      <!-- Grid column -->
   </div>
+  <!-- Footer Text -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">made with <i class="fas fa-heart"></i> by
+    <a href="https://clement-fermaud.com"> Clément Fermaud</a>
+  </div>
+  <!-- Copyright -->
+
 </footer>
+<!-- Footer -->
 </body>
 
 

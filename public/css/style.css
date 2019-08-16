@@ -32,6 +32,8 @@ img {
 body {
     font-family: 'Quicksand', sans-serif;
     color: grey;
+    margin:0px; 
+    padding:0px;
 }
 
 
@@ -198,10 +200,11 @@ footer p {
 footer {
     padding-top: 30px !important;
     margin-top : 15px;
-
-
 }
 
+.fa-heart{
+    color: red;
+}
 
 #preloader {
     position: fixed;
