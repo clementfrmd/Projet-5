@@ -36,12 +36,11 @@
 
     <header>
         <div class="jumbotron ">
+        <img src="../public/img/cryptocurrencies.png" class="headerlogo">
             <h1>Comparateur de Crypto-Monnaies</h1>
 
         </div>
         <nav class="navbar   navbar-expand-md navbar-dark">
-    <a class="nav-link" href="index.php">
-    </a>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item active">
@@ -51,9 +50,8 @@
                 <a class="nav-link" href="top10.php">Top 10</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="app/views/viewArticle.php">News</a>
+                <a class="nav-link" href="index.php?action=Article">News</a>
             </li>
-
         </ul>
 
     </div>
@@ -82,13 +80,6 @@
 
       <!-- Grid column -->
       <div class="col-md-6 mt-md-0 mt-3">
-
-        <!-- Content -->
-        <h3 class="text-uppercase font-weight-bold">Footer text 1</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita sapiente sint, nulla, nihil
-          repudiandae commodi voluptatibus corrupti animi sequi aliquid magnam debitis, maxime quam recusandae
-          harum esse fugiat. Itaque, culpa?</p>
-
       </div>
       <!-- Grid column -->
 
@@ -96,13 +87,6 @@
 
       <!-- Grid column -->
       <div class="col-md-6 mb-md-0 mb-3">
-
-        <!-- Content -->
-        <h4 class="text-uppercase font-weight-bold">Footer text 2</h4>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio deserunt fuga perferendis modi earum
-          commodi aperiam temporibus quod nulla nesciunt aliquid debitis ullam omnis quos ipsam, aspernatur id
-          excepturi hic.</p>
-
       </div>
       <!-- Grid column -->
 
@@ -115,14 +99,21 @@
 
   <!-- Copyright -->
   <div class="footer-copyright text-center py-3">made with <i class="fas fa-heart"></i> by
-    <a href="https://clement-fermaud.com"> Clément Fermaud</a>
+    <a href="https://clement-fermaud.com"> Clément Fermaud 
+    <!-- If no logged already Get user connection -->
+ <?php if (empty($_SESSION)) { ?>
+    <li class="nav-link active">
+        <a href="index.php?action=login"><i class="fas fa-sign-in-alt"></i></a></li>
+        <!-- Deconection link -->
+        <?php } else { ?>
+          <li><a href="index.php?action=login"><i class="fas fa-grin"></i> <?= $_SESSION['username']; ?></a></li>
+          <li><a href="index.php?action=disconnect"><i class="fas fa-sign-out-alt"></i> Se déconnecter</a></li>
+        <?php } ?>
+        <!----></a>
   </div>
   <!-- Copyright -->
-
 </footer>
 <!-- Footer -->
 </body>
 
-
 </html>
-

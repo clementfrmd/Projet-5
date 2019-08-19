@@ -27,6 +27,13 @@ img {
 
 }
 
+.headerlogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
 
 
 body {
@@ -127,6 +134,9 @@ nav {
     color: #107bfd !important;
 }
 
+li {
+    list-style: none;
+}
 /*CARD INFO*/
 
 /* ombre card*/
@@ -189,6 +199,11 @@ h1 {
     font-size: 20px;
     font-weight: bold;
     color: whitesmoke
+}
+
+/*login*/
+.flex-grow-1{
+    border-radius: 5px 0 0 0;
 }
 
 

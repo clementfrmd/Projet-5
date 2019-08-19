@@ -62,10 +62,10 @@
         // Show home administration
         $this->homeAdmin();
       }
-      // Else show arror message
+      // Else show error message
       else {
         $errorLogin = "Votre identifiant ou votre mot de passe est incorrect";
-        require('../App/Views/viewLogin.php');
+        require('../app/Views/viewLogin.php');
       }
     }
 

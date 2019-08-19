@@ -20,23 +20,23 @@
     }
 
 
-    // Traite une requête entrante
-    public function routerRequest()
-    {
-      try {
-        // Vérifie que la variable est définie
-        if (isset($_GET['action'])) {
-          switch ($_GET['action']) {
-            // Requête affichage d'un article en fonction de son id
-            case 'article':
-              $articleId = intval($this->getParameter($_GET, 'id'));
-              if ($articleId != 0) {
-                $this->ctrlArticles->article($articleId);
-              }
-              else {
-                throw new \Exception("Identifiant de l'article non valide");
-              }
-            break;
+ // Traite une requête entrante
+ public function routerRequest()
+ {
+   try {
+     // Vérifie que la variable est définie
+     if (isset($_GET['action'])) {
+       switch ($_GET['action']) {
+         // Requête affichage d'un article en fonction de son id
+         case 'article':
+           $articleId = intval($this->getParameter($_GET, 'id'));
+           if ($articleId != 0) {
+             $this->ctrlArticles->article($articleId);
+           }
+           else {
+             throw new \Exception("Identifiant de l'article non valide");
+           }
+         break;
 
             // Affichage détails cypto
 
@@ -81,10 +81,12 @@
             break;
 
             // Requête connexion à la partie administration
-            case 'adminLogin':
+            case 'adminLogin';
+            // echo 'coucou';
               // Récupère les paramètres
               $username = $this->getParameter($_POST, 'username');
               $password = $this->getParameter($_POST, 'password');
+
               // Vérification des données de connexion
               $this->ctrlUsers->login($username, $password);
             break;
@@ -245,13 +247,14 @@
             break;
           }
         }
-        // Si ucune action définie: affichage de l'accueil
+        // Si ucune action définie : affichage de l'accueil
         else {
           $this->ctrlHome->home();
         }
       }
       // Affichage du message d'erreur
       catch (\Exception $e) {
+         // echo $e->getMessage();
         $this->error($e->getMessage());
       }
     }

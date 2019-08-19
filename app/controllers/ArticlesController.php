@@ -35,7 +35,7 @@
       // Show article's title
       $articlesList = $this->article->getArticlesList();
 
-      // vViewArticle generation
+      // ViewArticle generation
       $view = new View("Article");
       $view->generateView(array('article' => $article, 'comments' => $comments, 'articlesList' => $articlesList));
     }
