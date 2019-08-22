@@ -39,11 +39,11 @@
          break;
 
          // Affichage 10 meilleurs crypto
-                     case 'top10':
-                     // Récupère les paramètres
-                     $Tcoin = $this->getParameter($_POST, 'id');
-                     $this->ctrlArticles->top10($TopCoins);
-                   break;
+            case 'top10':
+            // Récupère les paramètres
+            $Tcoin = ($this->getParameter($_GET, 'id'));
+            $this->ctrlHome->top10($Tcoin);
+            break;
 
             // Affichage détails cypto
 

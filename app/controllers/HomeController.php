@@ -39,5 +39,13 @@
       $titrePage = "Prix et Infos $coinName ($coinId)";
       $view->generateView(array('Isymbol' => $coinId , 'Nom' => $coinName, 'titrePage' => $titrePage, 'Qcoin' => $Qcoin, 'Qcoin2' => $Qcoin2));
     }
+    
+        // Control page 'Top10'
+        public function top10($Tcoin){
+          // viewHome generation function
+          $view = new View("top10");
+          $titrePage = "TOP 10 Des Cryto-Monnaies $Tcoin ($coinId)";
+          $view->generateView(array('Isymbol' => $coinId , 'Nom' => $coinName, 'titrePage' => $titrePage, 'Qcoin' => $Qcoin, 'Qcoin2' => $Qcoin2));
+    }
   }
 ?>

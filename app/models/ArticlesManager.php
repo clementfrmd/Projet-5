@@ -63,7 +63,7 @@
       return $newArticle;
     }
 
-    // EDelete article
+    // Delete article
     public function deleteArticle($id)
     {
       $sql = "DELETE FROM articles WHERE id = ?";
