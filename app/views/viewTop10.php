@@ -4,8 +4,8 @@
 $an = date("Y"); 
 
 $titrePage = "TOP 10 Des Cryto-Monnaies $an ";
-include ('../app/Libs/ApiTop.php');
-include ('../app/views/navbar.php');
+include ('Libs/ApiTop.php');
+include ('views/navbar.php');
  ?>
 
 <script>
@@ -27,5 +27,5 @@ include ('../app/views/navbar.php');
 
 
 
-<script type="text/javascript" src="../js/top.js"></script>
-<?php include ('../app/views/footer.php') ?>
+<script type="text/javascript" src="../public/js/top.js"></script>
+<?php include ('template.php') ?>

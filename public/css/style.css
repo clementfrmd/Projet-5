@@ -4,7 +4,6 @@
         url('embryonic-world-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
@@ -13,12 +12,195 @@
         url('bitcoin-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
+
+/* ------------- Aside ------------- */
+
+
+.aside {
+    text-align: center;
+}
+
+.menuAside {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 80px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px 0px #ABB0B0
+}
+
+.menuAside h2 {
+    margin-top: 0;
+}
+
+.menuAside ul {
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.menuAside li {
+    padding: 5px;
+}
+
+.menuAside a {
+    font-size: 0.9em;
+    color: #1b9eff;
+    text-decoration: underline;
+}
+
+.menuAside a:hover {
+    color: #1b9eff;
+}
+
+
+/* ------------- Content ------------- */
+
+
+time {
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+article p {
+    text-align: justify;
+}
+
+.readMore {
+    font-size: 0.8em;
+    font-style: italic;
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+}
+
+button:active {
+    color: white;
+}
+
+
+/* ---------------- Reported Comments ------------ */
+
+
+.report {
+    display: flex;
+    flex-direction: column;
+    min-width: 40px;
+    flex-wrap: wrap;
+}
+
+
+/* ------------- ARTICLE PREVIEW ------------- */
+
+
+.articles {
+    border-radius: 5px;
+    padding: 20px;
+    color: grey;
+    font-size: 0.9em;
+    box-shadow: 3px 3px 10px 0px #ABB0B0
+}
+
+.articleTitle {
+    font-size: 1.3em;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.articles a {
+    color: rgb(white);
+}
+
+.articles header {
+    margin-bottom: 25px;
+}
+
+
+/* ------------- Comments -------------*/
+
+h3{
+    text-align: center;
+}
+
+.comments {
+    margin: 40px 200px;
+    padding: 20px;
+    color: grey;
+    font-size: 0.9em;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px 0px #ABB0B0
+}
+
+.comments h3 {
+    color: rgb(grey);
+    font-size: 1.5em;
+    text-decoration: underline;
+    margin: 0 0 20px 0;
+}
+
+.comments a {
+    color: rgb(grey);
+}
+
+.comments legend {
+    color: rgb(grey);
+    font-size: 1.1em;
+}
+
+.comments fieldset {
+    border: 1px solid (white);
+    margin-top: 20px;
+}
+
+.headerReport {
+    display: flex;
+    justify-content: space-between;
+}
+
+.commentsList {
+    border-top: 2px solid rgb(white);
+}
+
+
+.formComment {
+    margin-bottom: 25px;
+}
+
+.addComment {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 40px;
+}
+
+#username {
+    width: 160px;
+    margin: 10px 0 10px 0;
+}
+
+#txtComment {
+    margin: 10px 0 10px 0;
+}
+
+textarea {
+    width: 100%;
 
 }
 
+.signal {
+    color: #f93e3e;
+    font-size: 1em;
+}
+
+#mytextarea {
+    height: 500px
+}
+
+/* --- */
+
 img {
     margin-top: 10px;
-  }
+}
 
 .tlogo {
     font-family: embryonicworldregular, sans-serif;
@@ -27,7 +209,7 @@ img {
 
 }
 
-.headerlogo{
+.headerlogo {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -39,8 +221,8 @@ img {
 body {
     font-family: 'Quicksand', sans-serif;
     color: grey;
-    margin:0px; 
-    padding:0px;
+    margin: 0px;
+    padding: 0px;
 }
 
 
@@ -102,6 +284,7 @@ nav {
     margin-top: -2rem;
     box-shadow: 3px 3px 10px 0px #ABB0B0;
 
+
 }
 
 .thead {
@@ -137,6 +320,7 @@ nav {
 li {
     list-style: none;
 }
+
 /*CARD INFO*/
 
 /* ombre card*/
@@ -185,7 +369,6 @@ canvas {
     max-height: 15rem !important;
     margin-bottom: 0rem;
     background-image: linear-gradient(30deg, #7c71f5, #1b9eff);
-    /*    background-image:linear-gradient(30deg,#8E54E9,  #4776E6 );*/
     border-radius: 0px;
 }
 
@@ -202,7 +385,7 @@ h1 {
 }
 
 /*login*/
-.flex-grow-1{
+.flex-grow-1 {
     border-radius: 5px 0 0 0;
 }
 
@@ -214,10 +397,10 @@ footer p {
 
 footer {
     padding-top: 30px !important;
-    margin-top : 15px;
+    margin-top: 15px;
 }
 
-.fa-heart{
+.fa-heart {
     color: red;
 }
 
@@ -300,6 +483,8 @@ footer {
         transform: rotate(360deg);
     }
 }
+
+
 
 @media screen and (max-width: 845px) {}
 

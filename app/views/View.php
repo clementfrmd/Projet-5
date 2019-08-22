@@ -36,5 +36,5 @@
       $view = $this->generateFile("../App/Views/template.php", array("title" => $this->title, "content" => $content));
       echo $view;
     }
-  }
+    }
 ?>

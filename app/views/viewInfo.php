@@ -2,13 +2,7 @@
 
  //Recuperation du symbole dans L URL
 
-//    echo $Isymbol;  
 include ('app/ApiDetail.php');
-// TEST retour jSON info et quotes
-//    echo $InfoCoin; 
-//    echo $Qcoin;
-include ('includes/header.php');
-include ('includes/navbar.php');
  ?>
 
 <script>
@@ -26,10 +20,6 @@ include ('includes/navbar.php');
             <div class="card">
 
                 <h2 class="card-header" id=Tcard>Prix et Infos du </h2>
-
-
-
-
                 <div class="card-body">
                     <div class="container">
                         <div class="row">
@@ -126,4 +116,4 @@ include ('includes/navbar.php');
     </div>
 </div>
 
-<script type="text/javascript" src="js/info.js"></script>
+<script type="text/javascript" src="../public/js/info.js"></script>

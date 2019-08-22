@@ -38,6 +38,13 @@
            }
          break;
 
+         // Affichage 10 meilleurs crypto
+                     case 'top10':
+                     // Récupère les paramètres
+                     $Tcoin = $this->getParameter($_POST, 'id');
+                     $this->ctrlArticles->top10($TopCoins);
+                   break;
+
             // Affichage détails cypto
 
             case 'infocrypto':
@@ -247,7 +254,7 @@
             break;
           }
         }
-        // Si ucune action définie : affichage de l'accueil
+        // Si aucune action définie : affichage de l'accueil
         else {
           $this->ctrlHome->home();
         }

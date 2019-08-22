@@ -5,15 +5,15 @@
 
 <aside class="aside">
   <div class="menuAside">
-    <h2>Gérer les chapitres</h2>
+    <h2>Gérer les articles</h2>
     <ul>
-      <li><a href="index.php?action=addArticleView"><i class="fas fa-folder-plus"></i> Ajouter un chapitre</a></li>
+      <li><a href="index.php?action=addArticleView"><i class="fas fa-folder-plus"></i> Ajouter un article</a></li>
 
       <!-- LIST OF ARTICLES -->
       <?php foreach ($articlesList as $articleList): ?>
         <li><a href="<?= "index.php?action=articleAdmin&id=" . $articleList['id'] ?>">
           <?php if (!$articleList['statut']): ?>
-            <i class="fas fa-bell signal"></i>
+            <i class="fas fa-pencil-alt"></i>
           <?php endif; ?><?= $articleList['title'] ?></a>
         </li>
       <?php endforeach; ?>
@@ -23,11 +23,11 @@
 
 
 <div class="content">
-<h2>Changer le mot de passe :</h2>
+<h3>Changer le mot de passe :</h3>
   <!-- Link to password modification -->
   <p class="comments">Pour modifier votre mot de passe <a
     href ="index.php?action=password">cliquez ici</a></p>
-  <h2>Gestion des commentaires signalés :</h2>
+  <h3>Gestion des commentaires signalés :</h3>
   <div class="comments">
     <!-- SHOW REPORTED COMMENTS -->
     <?php foreach ($comments as $comment): ?>

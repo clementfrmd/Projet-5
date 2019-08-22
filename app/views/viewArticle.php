@@ -5,7 +5,7 @@
 
 <aside class="aside">
   <div class="menuAside">
-    <h2>Liste des chapitres</h2>
+    <h2>Liste des articles</h2>
     <ul>
       <!-- LIST OF ARTICLES -->
       <?php foreach ($articlesList as $articleList): ?>
@@ -34,7 +34,7 @@
   </article>
 
   <div class="comments">
-    <h3><i class="far fa-comment-dots"></i> Commentaires du chapitre : <?= $article['title'] ?></h3>
+    <h3><i class="far fa-comment-dots"></i> Commentaires du articles : <?= $article['title'] ?></h3>
 
     <!-- ADD COMMENT -->
     <form class="formComment" action="index.php?action=addComment" method="post">
