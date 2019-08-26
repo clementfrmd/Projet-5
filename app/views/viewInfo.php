@@ -45,8 +45,6 @@ include ('app/ApiDetail.php');
                                 <table class="table" id="example">
                                     <thead class="thead bg-light ">
                                         <tr>
-
-
                                             <th scope="col">Market Cap</th>
                                             <th scope="col">Total en Circulation</th>
                                             <th scope="col">Volume (24h)</th>

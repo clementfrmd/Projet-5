@@ -118,7 +118,7 @@ button:active {
 
 /* ------------- Comments -------------*/
 
-h3{
+h3 {
     text-align: center;
 }
 
@@ -227,12 +227,6 @@ body {
 
 
 /*navbar*/
-
-.logobar {
-    font-family: bitcoinregular, sans-serif;
-    font-size: 35px;
-    font-weight: normal;
-}
 
 .navbar {
     /*   background-color: #E6E6FA;*/
@@ -457,26 +451,23 @@ footer {
 }
 
 @-webkit-keyframes spin {
-    0% {
+    0%   {
         -webkit-transform: rotate(0deg);
         -ms-transform: rotate(0deg);
         transform: rotate(0deg);
     }
-
     100% {
         -webkit-transform: rotate(360deg);
         -ms-transform: rotate(360deg);
         transform: rotate(360deg);
     }
 }
-
 @keyframes spin {
-    0% {
+    0%   {
         -webkit-transform: rotate(0deg);
         -ms-transform: rotate(0deg);
         transform: rotate(0deg);
     }
-
     100% {
         -webkit-transform: rotate(360deg);
         -ms-transform: rotate(360deg);
@@ -485,7 +476,59 @@ footer {
 }
 
 
+@media (max-width: 500px) {
+    .responsive-table-line td:before {
+        content: attr(data-title);
+    }
 
-@media screen and (max-width: 845px) {}
+    .responsive-table-line table,
+    .responsive-table-line thead,
+    .responsive-table-line tbody,
+    .responsive-table-line th,
+    .responsive-table-line td,
+    .responsive-table-line tr {
+        display: block;
+    }
 
-@media screen and (max-width: 705px) {}
+    .responsive-table-line thead tr {
+        display: none;
+    }
+
+    .responsive-table-line td {
+        position: relative;
+        border: 0px solid transparent;
+        padding-left: 50% !important;
+        white-space: normal;
+        text-align: right;
+    }
+
+    .responsive-table-line td:before {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 45%;
+        padding-right: 15px;
+        height: 100%;
+        white-space: nowrap;
+        text-overflow: ellipsis !important;
+        overflow: hidden !important;
+        text-align: left;
+        background-color: #f8f8f8;
+        padding: 2px;
+    }
+
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-top: 60px;
+    }
+}

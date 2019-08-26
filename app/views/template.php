@@ -41,7 +41,7 @@
     <title> <?= $title ?> </title>
 </head>
 
-<body onload="checkCookie()">
+<!--<body onload="checkCookie()">-->
 
     <header>
         <div class="jumbotron ">
