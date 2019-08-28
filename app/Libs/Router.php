@@ -41,18 +41,17 @@
          // Affichage 10 meilleurs crypto
             case 'top10':
             // Récupère les paramètres
-            $Tcoin = ($this->getParameter($_GET, 'id'));
-            $this->ctrlHome->top10($Tcoin);
+           // $Tcoin = ($this->getParameter($_GET, 'id'));
+            $this->ctrlHome->top10();
             break;
 
             // Affichage détails cypto
 
             case 'infocrypto':
             $coinId = ($this->getParameter($_GET, 'id'));
-            $coinName =$this->getParameter($_GET, 'id');
+            $coinName =$this->getParameter($_GET, 'name');
             $this->ctrlHome->infocrypto($coinId, $coinName);
             break;
-
 
             // Requête ajout d'un commentaire
             case 'addComment':
@@ -261,7 +260,8 @@
       }
       // Affichage du message d'erreur
       catch (\Exception $e) {
-         // echo $e->getMessage();
+          echo $e->getMessage();
+          die();
         $this->error($e->getMessage());
       }
     }

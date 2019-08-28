@@ -38,7 +38,6 @@
             selector: '#mytextarea'
         });
     </script>
-    <title> <?= $title ?> </title>
 </head>
 
 <!--<body onload="checkCookie()">-->
@@ -46,7 +45,7 @@
     <header>
         <div class="jumbotron ">
             <img src="../public/img/cryptocurrencies.png" class="headerlogo">
-            <h1>Comparateur de Crypto-Monnaies</h1>
+            <h1><a href="index.php" style="text-decoration:none" class="uppertitle">Comparateur de Crypto-Monnaies</a></h1>
 
         </div>
         <nav class="navbar   navbar-expand-md navbar-dark">
@@ -57,9 +56,6 @@
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="index.php?action=top10">Top 10</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.php?action=Article">News</a>
                     </li>
                 </ul>
 
@@ -98,7 +94,7 @@
 
             </div>
             <!-- Grid row -->
-            <hr class="rgba-white-light" style="margin: 0 15%;">
+            <hr class="rgba-white-light" style="margin: 0 40%;">
 
         </div>
         <!-- Footer Text -->

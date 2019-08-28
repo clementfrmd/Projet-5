@@ -15,7 +15,7 @@
       if (self::$parameters == null) {
         $file = "../App/Config/config.ini";
         if (!file_exists($file)) {
-          throw new \Exception("Auncun fichier de configuration trouvé");
+          throw new \Exception("Aucun fichier de configuration trouvé");
         }
         else {
           self::$parameters = parse_ini_file($file);

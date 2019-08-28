@@ -34,7 +34,7 @@
   </article>
 
   <div class="comments">
-    <h3><i class="far fa-comment-dots"></i> Commentaires du articles : <?= $article['title'] ?></h3>
+    <h3><i class="far fa-comment-dots"></i> Commentaires des articles : <?= $article['title'] ?></h3>
 
     <!-- ADD COMMENT -->
     <form class="formComment" action="index.php?action=addComment" method="post">

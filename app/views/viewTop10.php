@@ -1,11 +1,13 @@
+<!-- TITLE -->
+<?php $this->title = "Top 10 des cryptos"; ?>
+
 <?php
 
 
 $an = date("Y"); 
 
 $titrePage = "TOP 10 Des Cryto-Monnaies $an ";
-include ('Libs/ApiTop.php');
-include ('views/navbar.php');
+include ('../app/Libs/ApiTop.php');
  ?>
 
 <script>
@@ -22,10 +24,8 @@ include ('views/navbar.php');
     </div>
 </div>
 <div class="text-center">
-<!--<a href="https://www.ledger.com?r=8dd75a938fc1"><img class="img-fluid" width=728 height=90 alt="Ledger Nano S - The secure hardware wallet" src="https://www.ledgerwallet.com/images/promo/nano-s/ledger_nano-s_7-2-8x9-0.jpg"></a>-->
 </div>
 
 
 
 <script type="text/javascript" src="../public/js/top.js"></script>
-<?php include ('template.php') ?>

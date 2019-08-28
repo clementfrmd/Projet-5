@@ -85,7 +85,7 @@
        // tableau html
        $('#cour').append(
            "<tr><td>" +
-           $Rank + "</td><td><a title='" + $Name + "' href='info.php?id=" + $Symbol + "&name=" + $Name + "'> " +
+           $Rank + "</td><td><a title='" + $Name + "' href='index.php?action=infocrypto&id=" + $Symbol + "&name=" + $Name + "'> " +
            $Logo + "<font style='Font-Weight: Bold;' size='4'>" +
            $Symbol + "</font></br>" +
            $Name + "</a></td><td class='Ptablbtc'>" +
@@ -96,11 +96,8 @@
            $Vol24h + " €</td><td>" +
            $Variation1h + "</td><td>" +
            $Variation24h + "</td><td>" +
-           $Variation7d + "</td><td><a title='" + $Name + "' href='info.php?id=" +
+           $Variation7d + "</td><td><a title='" + $Name + "' href='index.php?action=infocrypto&id=" +
            $Symbol + "&name=" + $Name + "'><i class='fas fa-chart-bar '></i></a></td></tr>")
-
-       //         sitemap
-       //        console.log("<url><loc>http://lbcoin.fr/info.php?id="+ $Symbol +"&amp;name=" + $Name + "</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>"); 
 
    };
    $('#NbrCoin').append($i);

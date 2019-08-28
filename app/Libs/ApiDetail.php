@@ -29,6 +29,4 @@ $APIREST = new APIREST($CoinUrl2);
 $Qcoin2= $APIREST->call(
 	array ('X-CMC_PRO_API_KEY:'.$ApiKey)
     );
-
-
     ?>

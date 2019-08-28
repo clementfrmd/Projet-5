@@ -55,6 +55,33 @@ $titrePage = "Capitalisation et cours des Crypto-Monnaies.";
     </div>
 </div>
 <div class="text-center">
+
+
+<!-- MAIN NEWS -->
+
+<!-- Get Last 3 articles -->
+<div class="content">
+<div class="w3-container w3-center w3-animate-zoom">
+  <h2><i class="far fa-file-alt"></i> Dernières actus :</h2>
+  <?php foreach ($articles as $article): ?>
+    <article class="articles">
+      <header>
+        <!-- Article Titles -->
+        <a href="<?= "index.php?action=article&id=" . $article['id'] ?>">
+          <h3 class="articleTitle"><?= $article['title'] ?></h3>
+        </a>
+        <!-- Date -->
+        <time>Ajouté le : <?= $article['dateArt_fr'] ?></time>
+      </header>
+      <!-- Articles -->
+      <p><?= $article['preview'] ?></p>
+      <a class="readMore" href="<?= "index.php?action=article&id=" . $article['id'] ?>">[Lire la suite...]</a>
+    </article>
+    <hr />
+  <?php endforeach; ?>
+</div>
+</div>
+
 <script>
     $(document).ready(function() {
         $('#preloader').delay().hide();

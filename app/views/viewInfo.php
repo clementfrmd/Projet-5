@@ -1,8 +1,10 @@
+<!-- TITLE -->
+<?php $this->title = "Valorisation et détails" ?>
+
 <?php
 
  //Recuperation du symbole dans L URL
-
-include ('app/ApiDetail.php');
+include ('../App/Libs/ApiDetail.php');
  ?>
 
 <script>
